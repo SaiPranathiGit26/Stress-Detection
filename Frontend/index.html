@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stress Level Detection Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Stress Level Detection</h1>
+    <form id="stressForm">
+
+  <label>Username:</label>
+  <input type="text" id="username" required>
+
+  <label>Password:</label>
+  <input type="password" id="password" required>
+
+  <label>What is your Gender:</label>
+  <input type="text" id="gender" placeholder="In words" required>
+
+  <label>What is your Age:</label>
+  <input type="text" id="age" placeholder="In words" required>
+
+  <label>Describe yourself (Passion, Love, Fav Dish):</label>
+  <textarea id="description" rows="3" required></textarea>
+
+  <label>Your Lifestyle (Music, Gym, Social Media, Study, etc.):</label>
+  <textarea id="lifestyle" rows="3" required></textarea>
+
+  <label>How have you been lately?</label>
+  <input type="text" id="lately" placeholder="Blessed, peaceful, stuck, stressed" required>
+
+  <label>Describe your Mood Truck:</label>
+  <input type="text" id="mood" placeholder="Lovely, angry, scary, sad..." required>
+
+  <label>Reflect on your day/week:</label>
+  <textarea id="reflection" rows="3" required></textarea>
+
+  <label>What's Causing Stress?</label>
+  <textarea id="stressCauses" rows="3" required></textarea>
+
+  <label>How Are You Handling your Stress?</label>
+  <textarea id="handling" rows="3" required></textarea>
+
+  <label>Would you like to share any worries?</label>
+  <textarea id="worries" rows="3" required></textarea>
+
+  <label>Anything else you want us to know?</label>
+  <textarea id="extra" rows="3" required></textarea>
+
+  <label> Consent / Privacy:</label>
+  <input type="checkbox" id="consent" required>
+  <span>I acknowledge that my data will be anonymized, kept strictly confidential, and handled in 
+compliance with ethical data protections standards.</span>
+
+  <button type="submit">Submit</button>
+</form>
+
+
+   <div id="loading" class="hidden">⏳ Analyzing your responses... please wait.</div>
+
+<div id="result" class="hidden">
+  <h2>Stress Analysis Result</h2>
+  <p id="stressLevel"></p>
+  <p id="confidence"></p>
+  <p id="recommendations"></p>
+  <button id="downloadPdf">Download PDF</button>
+</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
